@@ -1,31 +1,38 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+    \documentclass{mipt-thesis-bs}
+    \usepackage{mipt-thesis-biblatex}
+    \addbibresource{bibliography.bib}
+    \usepackage{hyperref}
+    %\urlstyle{same}
 
-\title{Diplom}
-\author{Alexey Kruglov}
-\date{May 2019}
-
-\usepackage{natbib}
-\usepackage{graphicx}
+    \title{Влияние микролинзирования на кривые
+           блеска гравитационно линзированных сверхновых}
+    \author{Круглов А.\ А.}
+    \supervisor{Лыскова Н.\ С.}
+    \groupnum{082}
+    \faculty{Факультет проблем физики и энергетики}
+    \department{Кафедра космической физики}
 
 \begin{document}
 
-\maketitle
+    \frontmatter
+    
+    \titlecontents
+    
+    \mainmatter
 
-\section{Introduction}
-There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
-There is another theory which states that this has already happened.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe}
-\caption{The Universe}
-\label{fig:universe}
-\end{figure}
+\chapter{Введение}
 
-\section{Conclusion}
-``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+    \section{Актуальность}
+    Здесь идет текст. Вот так выглядит ссылка на библиографию \cite{adams1995hitchhiker}.
+    
+    Заявка на грант: \href{https://docs.google.com/document/d/1LeG-XjcpTT6cA9TJIDq61qVxFLF8IR38VrDoK6hkXco/edit?ts=5b23a829#}{link}.
+    \section{Цели и задачи научной работы}
+    Аналогично добавляются \cite[chapter 2]{langmuir26} еще главы, внутри них можно объявлять секции с помощью \verb|\section|.
 
-\bibliographystyle{plain}
-\bibliography{references}
-\end{document}
+
+    \backmatter
+
+    \printbib
+   
+    \end{document}
