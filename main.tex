@@ -1,10 +1,16 @@
     \documentclass{mipt-thesis-bs}
     \usepackage{mipt-thesis-biblatex}
     \addbibresource{bibliography.bib}
+    \usepackage{graphicx}
+    \usepackage{wrapfig}
     \usepackage{hyperref}
-    %\urlstyle{same}
+    \numberwithin{equation}{chapter}
+    \hypersetup{colorlinks=true}
+    \usepackage{float}
+    
+   % \urlstyle{same}
 
-    \title{Влияние микролинзирования на кривые
+    \title{Исследование влияния микролинзирования на кривые
            блеска гравитационно линзированных сверхновых}
     \author{Круглов А.\ А.}
     \supervisor{Лыскова Н.\ С.}
@@ -22,29 +28,14 @@
 
 
 \chapter{Введение}
+  %  \input{intro/intro_general}
 
-    \section{Тест литературы}
-    \cite{gravlensbook}
-    \cite{kelly2014}
-    \cite{treu2015}
-    \cite{rodney2016}
-    \cite{gl_all}
-    \cite{moresuyu2017}
-    \cite{pierelrodney2019}
-    \cite{dobler2015}
-    \cite{doblerkeeton2006}
-    \cite{refsdalstabell1991}
-    \cite{refsdal1964}
-    \cite{narbart}
+\chapter{Микролинзирование}
+   % \input{microlensing/micro_general}
     
-    \section{Актуальность задачи}
-    Заявка на грант: \href{https://docs.google.com/document/d/1LeG-XjcpTT6cA9TJIDq61qVxFLF8IR38VrDoK6hkXco/edit?ts=5b23a829#}{link}.
-    
-    \section{Цели и задачи научной работы}
-    Аналогично добавляются \cite{langmuir26} еще главы \cite{adams1995hitchhiker}, внутри них можно объявлять секции с помощью \verb|\section|.
-    
-    \section{Собственно введение}
-    \input{introduction}
+\chapter{Что-то ещё}
+    \input{impact/impact_general}
+
 
     \backmatter
 
