@@ -30,7 +30,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% Set up correct formatting %%%%%
-\geometry{left=3cm}
+\geometry{left=2cm}
 \geometry{right=2cm}
 \geometry{top=2cm}
 \geometry{bottom=2cm}
@@ -110,7 +110,7 @@
 
 
 \def\@makechapterhead#1{%
-  \vspace*{50\p@}%
+  \vspace*{20\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
@@ -230,15 +230,15 @@
     \vspace{7em}
 
     \begin{center}
-        Долгопрудный \\
+        Москва \\
         \the\year{}
     \end{center}
 
 }
 
 \newcommand{\titlecontents}{
-    \titlepage \addemptypage
-    \tableofcontents \addemptypage
+    \titlepage %\addemptypage
+    \tableofcontents %\addemptypage
     \pagestyle{miptthesis}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
