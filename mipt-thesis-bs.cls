@@ -110,26 +110,26 @@
 
 
 \def\@makechapterhead#1{%
-  \vspace*{20\p@}%
+ % \vspace*{20\p@}%
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
       \if@mainmatter
         \huge\bfseries\boldmath \@chapapp\space \thechapter
         \par\nobreak
-        \vskip 20\p@
+      %  \vskip 20\p@
       \fi
     \fi
     \interlinepenalty\@M
     \Huge \bfseries\boldmath #1\par\nobreak
-    \vskip 40\p@
+    \vskip 20\p@
   }}
 \def\@makeschapterhead#1{%
-  \vspace*{50\p@}%
+  %\vspace*{50\p@}%
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
     \Huge \bfseries\boldmath  #1\par\nobreak
-    \vskip 40\p@
+    \vskip 20\p@
   }}
 
 
@@ -237,8 +237,8 @@
 }
 
 \newcommand{\titlecontents}{
-    \titlepage %\addemptypage
-    \tableofcontents %\addemptypage
+    \titlepage \addemptypage
+    \tableofcontents \addemptypage
     \pagestyle{miptthesis}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

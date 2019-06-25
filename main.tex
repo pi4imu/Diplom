@@ -5,7 +5,7 @@
     \usepackage{wrapfig}
     \usepackage{hyperref}
     \numberwithin{equation}{chapter}
-    \hypersetup{colorlinks=true}
+    \hypersetup{colorlinks=false}
     \usepackage{float}
     \usepackage{url}
     
@@ -13,7 +13,7 @@
     \title{Исследование влияния микролинзирования на кривые
            блеска гравитационно линзированных сверхновых}
     \author{Круглов А.\ А.}
-    \supervisor{Лыскова Н.\ С.}
+    \supervisor{к.ф.-м.н. Лыскова Н.\ С.}
     \groupnum{582}
     \faculty{Физтех-школа Фундаментальной и Прикладной Физики \\ Факультет проблем физики и энергетики}
     \department{Кафедра космической физики}
@@ -24,21 +24,21 @@
 
     \frontmatter
     \pagenumbering{arabic}
-    \titlecontents
+    \titlecontents \setcounter{page}{3}
     
-   % \chapter{11}
-   % ываываывавыаываыва
-   
+    %\chapter{}
+    
+    
     \mainmatter
 
 
-\chapter{Введение} \setcounter{page}{3}
+\chapter{Введение} \setcounter{page}{5}
     \input{intro/intro_general}
 
 \chapter{Микролинзирование}
     \input{microlensing/micro_general}
     
-\chapter{Исследования}
+\chapter{Основная часть}
     \input{impact/impact_general}
 
 \chapter{Заключение}
